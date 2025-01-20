@@ -1,0 +1,1 @@
+Esse repositório tem como principal objetivo guardar os códigos das aulas práticas da disciplina de Desennvolvimento Dinâmico Front-End para aprimorar habilidades em vários tópicos, alem de apresentar o que tenho aprendido.
