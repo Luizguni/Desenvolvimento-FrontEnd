@@ -1,0 +1,4 @@
+.form-control:hover {
+    transform: rotate(5deg) scale(1.1) translateX(10px) skewX(5deg);
+    transition: transform 0.3s ease-in-out;
+}

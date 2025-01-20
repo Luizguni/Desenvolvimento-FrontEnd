@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR">
+<!-- Início do documento HTML, define o idioma da página como português do Brasil -->
+
+<head>
+    <!-- Cabeçalho do documento, contém informações de metadados -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página seja exibida corretamente em dispositivos móveis -->
+    <title>Formulário de Contato</title>
+    <!-- Título da página que aparece na aba do navegador -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS do Bootstrap 4.5.2, um framework CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS externo que estiliza a página -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Barra de navegação utilizando classes do Bootstrap -->
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Link da marca da navbar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!-- Ícone do toggler da navbar para dispositivos móveis -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Contêiner colapsável para os links de navegação -->
+            <ul class="navbar-nav">
+                <!-- Lista de navegação -->
+                <li class="nav-item active">
+                    <!-- Item ativo da lista -->
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <!-- Link para a página inicial com indicador visual de página atual -->
+                </li>
+                <li class="nav-item">
+                    <!-- Outro item da lista -->
+                    <a class="nav-link" href="#">Features</a>
+                    <!-- Link para a página de features -->
+                </li>
+                <li class="nav-item">
+                    <!-- Outro item da lista -->
+                    <a class="nav-link" href="#">Pricing</a>
+                    <!-- Link para a página de pricing -->
+                </li>
+                <li class="nav-item">
+                    <!-- Outro item da lista -->
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <!-- Link desabilitado -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Contêiner do Bootstrap para centralizar o conteúdo com margem no topo -->
+        <h1>Contato</h1>
+        <!-- Título principal da página de contato -->
+        <form action="/submit_form" method="POST">
+            <!-- Formulário com ação de envio para "/submit_form" usando método POST -->
+            <div class="form-group">
+                <!-- Grupo de formulário do Bootstrap -->
+                <label for="name">Nome</label>
+                <!-- Rótulo para o campo de entrada do nome -->
+                <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" required>
+                <!-- Campo de entrada de texto para o nome com placeholder e validação requerida -->
+                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                <!-- Mensagem de feedback para validação -->
+            </div>
+            <div class="form-group">
+                <!-- Outro grupo de formulário do Bootstrap -->
+                <label for="email">Email</label>
+                <!-- Rótulo para o campo de entrada de email -->
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                <!-- Campo de entrada de email com placeholder e validação requerida -->
+                <div class="invalid-feedback">Por favor, forneça um email válido.</div>
+                <!-- Mensagem de feedback para validação -->
+            </div>
+            <div class="form-group">
+                <!-- Outro grupo de formulário do Bootstrap -->
+                <label for="message">Mensagem</label>
+                <!-- Rótulo para o campo de texto -->
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                <!-- Campo de texto para mensagem com placeholder e validação requerida -->
+                <div class="invalid-feedback">Por favor, escreva uma mensagem.</div>
+                <!-- Mensagem de feedback para validação -->
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <!-- Botão de envio do formulário com estilo Bootstrap -->
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Script do jQuery para funcionalidades do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <!-- Script do Popper.js para funcionalidades do Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script do Bootstrap -->
+</body>
+
+</html>
+<!-- Fim do documento HTML -->
+

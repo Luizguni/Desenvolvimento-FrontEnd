@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR">
+<!-- Início do documento HTML, define o idioma da página como português do Brasil -->
+
+<head>
+    <!-- Cabeçalho do documento, contém informações de metadados -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que a página seja exibida corretamente em dispositivos móveis -->
+    <title>Cadastro de Usuários</title>
+    <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS externo que estiliza a página -->
+</head>
+
+<body>
+    <!-- Corpo do documento, onde o conteúdo visível da página é colocado -->
+    <h1>Cadastro de Usuários</h1>
+    <!-- Título principal da página -->
+
+    <form>
+        <!-- Início do formulário de cadastro -->
+        <fieldset>
+            <!-- Agrupa os elementos do formulário -->
+            <legend>Informações Pessoais</legend>
+            <!-- Legenda para o grupo de campos do formulário -->
+
+            <label for="nome">Nome:</label>
+            <!-- Rótulo para o campo de entrada do nome -->
+            <input type="text" id="nome" name="nome">
+            <!-- Campo de entrada de texto para o nome -->
+
+            <label for="email">E-mail:</label>
+            <!-- Rótulo para o campo de entrada de e-mail -->
+            <input type="email" id="email" name="email">
+            <!-- Campo de entrada de e-mail -->
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <!-- Rótulo para o campo de entrada de data de nascimento -->
+            <input type="date" id="data-nascimento" name="data-nascimento">
+            <!-- Campo de entrada de data -->
+
+            <label for="interesses">Interesses:</label>
+            <!-- Rótulo para o campo de seleção de interesses -->
+            <select id="interesses" name="interesses">
+                <!-- Campo de seleção com opções -->
+                <option value="tecnologia">Tecnologia</option>
+                <!-- Opção Tecnologia -->
+                <option value="esporte">Esporte</option>
+                <!-- Opção Esporte -->
+                <option value="arte">Arte</option>
+                <!-- Opção Arte -->
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <!-- Rótulo para o campo de texto -->
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <!-- Campo de texto para mensagem -->
+
+            <button type="submit">Cadastrar</button>
+            <!-- Botão de envio do formulário -->
+        </fieldset>
+    </form>
+
+    <table>
+        <!-- Início da tabela -->
+        <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <!-- Linha do cabeçalho -->
+                <th>Nome</th>
+                <!-- Cabeçalho da coluna Nome -->
+                <th>E-mail</th>
+                <!-- Cabeçalho da coluna E-mail -->
+                <th>Data de Nascimento</th>
+                <!-- Cabeçalho da coluna Data de Nascimento -->
+                <th>Interesses</th>
+                <!-- Cabeçalho da coluna Interesses -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Corpo da tabela -->
+            <tr>
+                <!-- Linha de dados da tabela -->
+                <td>Exemplo Nome</td>
+                <!-- Coluna com o nome de exemplo -->
+                <td>exemplo@dominio.com</td>
+                <!-- Coluna com o e-mail de exemplo -->
+                <td>01/01/2000</td>
+                <!-- Coluna com a data de nascimento de exemplo -->
+                <td>Tecnologia</td>
+                <!-- Coluna com o interesse de exemplo -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Rodapé da tabela -->
+            <tr>
+                <td colspan="4">Total de usuários cadastrados: 1</td>
+                <!-- Rodapé com a contagem total de usuários cadastrados -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <ul>
+        <!-- Lista não ordenada -->
+        <li>Tecnologia</li>
+        <!-- Item da lista: Tecnologia -->
+        <li>Esporte</li>
+        <!-- Item da lista: Esporte -->
+        <li>Arte</li>
+        <!-- Item da lista: Arte -->
+    </ul>
+</body>
+
+</html>
+<!-- Fim do documento HTML -->
